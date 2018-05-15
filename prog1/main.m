@@ -15,6 +15,8 @@
 - (void) print;
 - (void) setNumerator: (int) n;
 - (void) setDenominator: (int) d;
+- (int) numerator;
+- (int) denominator;
 
 @end
 
@@ -37,11 +39,19 @@
     denominator = d;
 }
 
+- (int) numerator {
+    return numerator;
+}
+
+- (int) denominator {
+    return denominator;
+}
+
 @end
 
 //---- program section ----
 
-int main(int argc, const char * argv[]) {
+int main (int argc, const char * argv[]) {
     @autoreleasepool {
         Fraction *myFraction;
         
